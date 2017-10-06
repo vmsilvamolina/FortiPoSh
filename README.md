@@ -1,7 +1,25 @@
 # FortiShell
 
-FortiShell es un módulo para administrar FortiGate desde PowerShell, utilizando Open-SSH como canal de comunicación.
+FortiShell is a PowerShell module to provides functionalities to facilitate managing and deploying of a Fortigate device, using Open-SSH for secure communication.
 
-#Instalación
-Para utilizar el módulo es necesario tener instalado Open-SSH, para ello se adjuntan las siguientes instrucciones:
+## Getting Started
 
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project and use.
+
+### Prerequisites
+
+This module depends on the following project:
+
+* [Open-SSH](https://www.openssh.com/)
+
+#### Install with Chocolatey
+
+```powershell
+choco install openssh -y
+```
+### Installing
+
+
+```powershell
+Install-Module -Name FortiShell
+```
