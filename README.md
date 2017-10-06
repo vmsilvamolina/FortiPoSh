@@ -10,6 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 This module depends on the following project:
 
+* PowerShell v4.0+
 * [Open-SSH](https://www.openssh.com/)
 
 #### Install with Chocolatey
@@ -18,7 +19,6 @@ This module depends on the following project:
 choco install openssh -y
 ```
 ### Installing
-
 
 ```powershell
 Install-Module -Name FortiShell
