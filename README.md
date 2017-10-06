@@ -1,6 +1,6 @@
-# FortiShell
+# FortiPoSh
 
-FortiShell is a PowerShell module to provides functionalities to facilitate managing and deploying of a Fortigate device, using Open-SSH for secure communication.
+FortiPoSh is a PowerShell module to provides functionalities to facilitate managing and deploying of a Fortigate device, using Open-SSH for secure communication.
 
 ## Getting Started
 
@@ -21,5 +21,5 @@ choco install openssh -y
 ### Installing
 
 ```powershell
-Install-Module -Name FortiShell
+Install-Module -Name FortiPoSh
 ```
