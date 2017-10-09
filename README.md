@@ -23,3 +23,7 @@ choco install openssh -y
 ```powershell
 Install-Module -Name FortiPoSh
 ```
+
+### License
+
+FortiPoSh is licensed under the [MIT license](https://github.com/vmsilvamolina/FortiPoSh/blob/master/LICENSE).
