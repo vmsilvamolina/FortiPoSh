@@ -13,7 +13,7 @@ This module depends on the following project:
 * PowerShell v4.0+
 * [Open-SSH](https://www.openssh.com/)
 
-## Install with Chocolatey
+### Install SSH with Chocolatey
 
 ```powershell
 choco install openssh -y
