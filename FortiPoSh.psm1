@@ -23,6 +23,34 @@ try {
 }
 }
 
+function Get-FortigateBackup {
+    [OutputType([String])]
+    param
+    (
+        [Parameter(Mandatory=$true)]
+        [String]$HostAddress,
+        [Parameter(Mandatory=$false)]
+        [Int]$HostPort = 22,
+        [Parameter(Mandatory=$true)]
+        [String]$FilePath,
+        [Parameter(Mandatory=$true)]
+        [String]$UserName
+    )
+
+$Command = @"
+show full-configuration
+"@
+
+try {
+    [System.Collections.ArrayList]$resultRaw = ssh $HostAddress -p $HostPort -l $UserName $Command
+    $result = $resultRaw | Where-Object {$_ -notmatch '--More--' -and $_.trim() -ne ""}
+    $result | Out-File $FilePath
+} catch {
+    Write-Warning -Message $error[0].exception.message
+}
+
+}
+
 function Get-FortigateSystemStatus {
     [OutputType([String])]
     param
