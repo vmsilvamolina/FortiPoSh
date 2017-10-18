@@ -24,6 +24,10 @@ choco install openssh -y
 Install-Module -Name FortiPoSh
 ```
 
+## Functions
+
+
+
 ## License
 
 FortiPoSh is licensed under the [MIT license](https://github.com/vmsilvamolina/FortiPoSh/blob/master/LICENSE).
