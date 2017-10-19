@@ -69,8 +69,8 @@ PowerShellVersion = '4.0'
 # NestedModules = @()
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-FunctionsToExport = 'Get-FortigateConfig', 'Get-FortigateBackup', 'Get-FortigateSystemStatus', 
-               'Set-FortigateAllowAccess'
+FunctionsToExport = 'Get-FortigateConfig', 'Get-FortigatePerformance', 'Get-FortigateBackup', 'Get-FortigateSystemStatus', 
+               'Set-FortigateAllowAccess', 'Set-FortigateHostname'
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
 CmdletsToExport = @()
